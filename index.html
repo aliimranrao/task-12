@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+</head>
+<style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+<body style="text-align: center;" >
+    <input type="number" id="Number1" placeholder="Enter the Number">
+    <br>
+    <br>
+    <button onclick="myFunction()">Check</button>
+    <p id="result"></p>
+   
+    <script>
+        function myFunction() {
+            let Number1 = document.getElementById('Number1').value;
+            Number1 = Number(Number1);
+            if ((Math.abs(100 - Number1) <= 20) || (Math.abs(400 - Number1) <= 20)){
+                document.getElementById("result").innerHTML = `${Number1}`
+            }
+            else{
+
+            }
+           
+        }
+    </script>
+    <p id="C" ></p>
+</body>
+
+</html>
